@@ -1,19 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h2>make some magic here!!</h2>
-
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
+    <title>Circle 176 Phonie</title>
+  </head>
+  <body>
+    <header class="container">
+      <p>Phonie</p>
+    </header>
+    <div class="main">
+      <div class="heading">
+        <h1>Validate Your Number</h1>
+        <p>Use Phonie to validate your phone number</p>
+      </div>
+      <form action="/action_page.php" method="_blank">
+        <div class="form-field">
+          <div>
+            <label for="first_name">First Name:</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="Your First Name"
+              class="inputs"
+            />
+          </div>
+          <div>
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Your Last Name"
+              class="inputs"
+            />
+          </div>
+        </div>
+        <div class="phone">
+          <label for="phone_number"> Phone: </label>
+          <div class="img-container">
+            <select name="country_code" id="country_code">
+              <option value="nigeria">NG +234</option>
+              <option value="ghana">GH +233</option>
+              <option value="south_africa">SA +27</option>
+              <option value="togo">TG +228</option>
+              <option value="kenya">KY +254</option>
+            </select>
+            <div class="phone-number">
+              <input
+                type="tel"
+                name="phone_number"
+                id="phone_number"
+                placeholder="xxxxxxx"
+                class="inputs"
+              />
+            </div>
+            <img id="img" src="" alt="" />
+          </div>
+        </div>
+      </form>
+      <div>
+        <button class="button" id="button" type="submit">Validate</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div>
+        <p>Copyright &COPY; Phonie, 2022</p>
+      </div>
+    </footer>
+  </body>
 </html>
